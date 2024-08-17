@@ -1,0 +1,423 @@
+/* ここから下に記載していく */
+body {
+    /* サイト幅指定：1200px */
+    width: 1200px;
+    margin-right: auto;
+    margin-left : auto;
+    height: auto;
+}
+
+/* header */
+#header {
+    width: 1200px;
+    height: 100px;
+    padding: 10px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* z-index: 1; */
+}
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+}
+a.nav_item {
+    display: flex;
+    font-size: 21px;
+    color: #222222;
+    padding: 50px 25px 50px 25px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/* /// mainvisual領域 /// */
+.mainvisual {
+    position: relative;;
+}
+/* <<< 画像パーツ >>> */
+.main-img{
+    width: 100%;
+}
+/* <<< タイトル文パーツ >>> */
+/* タイトル文パーツを画像の中央にセット */
+.maintitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    text-align: center;
+}   
+/* メインタイトル文 */
+.maintitle h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+/* サブタイトル文 */
+.maintitle h2 {
+    font-size: 32px;
+    color: white;
+}
+
+/* ABOUT領域 */
+#contents_ABOUT {
+/* テキスト中央揃え */
+    text-align: center;
+}
+/* <<< テキスト >>> */
+/* "ABOUT"見出しの文字仕様 */
+h1.ABOUT_contents {
+    margin-top: 60px;
+    color: #ffd61a;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* "次段見出しの文字仕様" */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #222222;
+    font-size: 18px;
+}
+/* messageの文字と文章毎の間隔仕様 */ 
+.message {
+    margin-bottom: 40px;
+    line-height: 25px;
+    color: #222222;
+    font-size: 16px; 
+}
+/* <<< 画像パーツ >>> */
+img.about_images {
+    margin: 40px 0px 0px 0px;
+}
+
+    
+/* /// COURSE領域 /// */
+#contents_COURSE {
+/* 文章パーツ全体の中央揃え */
+    text-align: center;
+}
+/* <<< 文章パーツ >>> */
+/* "COURSE"見出しの文字仕様 */
+h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #ffd61a;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* messageの文字と文章毎の間隔仕様 */ 
+.message {
+    margin-bottom: 60px;
+    line-height: 25px;
+    color: #222222;
+    font-size: 16px; 
+}
+/* <<< 画像パーツ >>> */
+/* 画像×3枚+メッセージ×３枠：交互並び */
+.COURSE_visuals {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 600px 600px;
+    margin-right: auto;
+    margin-left : auto;
+}
+.course_photo_size {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+/* １段目 */
+.COURSE_1st_msg_box {
+    background-color: #fafafa;
+    /* padding-left: 50px; */
+}
+.COURSE_1st_msg {
+    padding-top: 120px;
+    padding-left: 50px;
+}
+h4.item_title {
+    color: #222222;
+    font-size: 24px;
+    font-weight: bold;  
+    padding-bottom: 20px;
+    width: fit-content;
+}
+p.item_text {
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 30px;
+    width: fit-content;
+    text-align: left;
+}
+/* 2段目 */
+.COURSE_2nd_msg_box {
+    background-color: #fafafa;
+    padding-left: 50px;
+}
+.COURSE_2nd_msg {
+    position: right;
+    padding-top: 120px;
+    padding-right: 50px;
+}
+/* 3段目 */
+.COURSE_3rd_msg_box {
+    background-color: #fafafa;
+    padding-left: 50px;
+}
+.COURSE_3rd_msg {
+    position: right;
+    padding-top: 120px;
+    padding-right: 50px;
+}
+
+
+/* /// NEWS領域 /// */
+#NEWS {
+    /* <<< 文章パーツ >>> */
+    /* 文章パーツ全体の中央揃え */
+    text-align: center;
+}
+/* "NEWS"見出しの文字仕様 */
+h1.NEWS_contents {
+    margin-top: 60px;
+    color: #ffd61a;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* "次段見出しの文字仕様" */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #222222;
+    font-size: 18px;
+}
+/* <<< 画像パーツ >>> */
+.news_photo {
+    display: flex;
+    justify-content: center;
+}
+.news3 {
+    width: 300px;
+    font-size: 14px;
+    padding: 15px;
+    line-height: 25px;
+    text-align: left;
+}
+.news3:hover {
+    background-color: #FFF5CC;
+}
+/* <<< ボタンパーツ >>> */
+.more {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffd61a;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+.button:hover {
+    background-color: #FFE77F;
+}
+
+
+/* /// Access領域 /// */
+#Access {
+    background:#fafafa; /*背景色の指定*/
+    padding:10px;
+
+    /* <<< 文章パーツ >>> */
+    /* 文章パーツ全体の中央揃え */
+    text-align: center;
+}
+/* "Access"見出しの文字仕様 */
+h1 {
+    margin-top: 60px;
+    color: #ffd61a;
+    font-size: 24px;
+}
+/* "次段見出しの文字仕様" */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #222222;
+    font-size: 18px;
+}
+
+/* <<< 概要パーツ >>> */
+.table_access {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin: 0 auto
+}
+.access_summary {
+    padding: 15px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+/* /// CONTACT領域 /// */
+#CONTACT {
+    /* <<< 文章パーツ >>> */
+    /* 文章パーツ全体の中央揃え */
+    text-align: center;
+}
+/* "ABOUT"見出しの文字仕様 */
+h1 {
+    margin-top: 60px;
+    color: #222222;
+    font-size: 24px;
+}
+/* "次段見出しの文字仕様" */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #222222;
+    font-size: 18px;
+}
+/* messageの文字と文章毎の間隔仕様 */ 
+.message {
+    margin-bottom: 40px;
+    line-height: 25px;
+    color: #222222;
+    font-size: 16px;
+}
+/* <<< フォームパーツ >>> */
+.form {
+    display: table;
+    border-top: #bfbfbf solid;
+    border-bottom: #bfbfbf solid;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    
+}
+.form1_1 {
+    width: 240px;
+    height: 52px;
+    border-bottom: #bfbfbf solid;
+    border-right: #bfbfbf solid;
+    padding: 8px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+.form1_2 {
+    width: 400px;
+    height: 52px;
+    padding: 8px;
+    border-bottom: #bfbfbf solid;
+}
+.form_text1 {
+    width: 328px;
+    height: 36px;
+}
+.form1_3 {
+    width: 240px;
+    height: 52px;
+    border-bottom: #bfbfbf solid;
+    border-right: #bfbfbf solid;
+    padding: 8px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.form1_4 {
+    width: 400px;
+    height: 52px;
+    padding: 8px;
+    border-bottom: #bfbfbf solid;
+}
+.selectbox {
+    width: 336px;
+    height: 42px;
+}
+.form1_5 {
+    width: 240px;
+    height: 169px;
+    border-bottom: #bfbfbf solid;
+    border-right: #bfbfbf solid;
+    padding: 8px;
+    padding-left: 16px;
+    text-align: start;
+}
+.form1_6 {
+    font-size: 14px;
+    width: 328px;
+    height: 169px;
+    padding: 8px;
+    border-bottom: #bfbfbf solid;
+    line-height: 3;
+}
+.label {
+    padding-left: 8px;
+}
+.form1_7 {
+    width: 240px;
+    height: 156px;
+    border-right: #bfbfbf solid;
+    padding: 8px;
+    padding-top: 16px;
+    padding-left: 16px;
+    text-align: start;
+    vertical-align: top;
+}
+.form1_8 {
+    width: 400px;
+    height: 156px;
+    padding: 8px;
+    border-bottom: #bfbfbf solid;
+}
+.form_text2 {
+    width: 328px;
+    height: 134px;
+}
+
+/* <<< ボタンパーツ >>> */
+.sousin {
+    display: flex;
+    justify-content: center;
+}
+.submit-btn {
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffd61a;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border: none;
+}
+.submit-btn:hover {
+    background-color: #FFE77F;
+}
+
+
+/* /// footer領域 /// */
+#footer {
+    text-align: center;
+    background-color: #707070;
+    padding: 30px;
+}
+.footer_copyrights {
+    color: white;
+} 
+
